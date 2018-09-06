@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BodyBuzz Scrambled Words</title>
+	<link rel="stylesheet" type="text/css" href="scrambleGame.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<header>
+	<img id="logo" src="bBuzzLogo.jpg">
+	<h1>Word Scramble</h1>
+	<div class="bee"><img src="bumbleBee.jpg"></div>
+</header>
+
+<div id="stripe">
+	<button id="home" class="stripeButton" onclick="window.location.href='https://www.bodybuzzwellness.com'">HOME</button>	
+	<button id="trivia" class="stripeButton" onclick="window.location.href='triviaQuiz.html'">TRIVIA QUIZ</button>
+	<button id="scramble" class="stripeButton" onclick="window.location.href='scrambleGame.html'">WORD SCRAMBLE</button>
+	<button id="burn" class="stripeButton" onclick="window.location.href='fitnessGame.html'">CALORIE BURN</button>
+	<button class="stripeButton" onclick="window.location.href='mailto:info@bodybuzzwellness.com'">CONTACT BodyBuzz</button>
+</div>
+
+<h2 id="intro">Unscramble the letters to make a word that:</h2>
+<h2>describes a BodyBuzz exercise</h2>
+<div id="word1" class="puzzle">
+	<p>R</p>
+	<p>H</p>
+	<p>T</p>	
+	<p>G</p>
+	<p>E</p>
+	<p>S</p>
+	<p>I</p>
+	<p>T</p>
+	<p>N</p>
+	<p>C</p>
+	<div id="solve">(drag letters over here and unscramble the word)</div>
+</div>
+
+<button id="button1" class="show">Show Answer</button><span id="answer1"></span>
+<label  for="guess1"> OR . . . Check your answer here:</label>
+	<input name="guess1" id="guess1" type="text" placeholder="(type in answer)">
+	<span id="result1"></span>
+
+<h2>describes a machine available at BodyBuzz</h2>
+<div id="word2" class="puzzle"><br>
+	<p>L</p>
+	<p>P</p>
+	<p>T</p>
+	<p>C</p>
+	<p>E</p>
+	<p>L</p>
+	<p>I</p>
+	<p>L</p>
+	<p>I</p>
+	<p>A</p>
+	<div id="solve">(drag letters over here and unscramble the word)</div>
+</div>
+<button id="button2" class="show">Show Answer</button><span id="answer2"></span>
+<label  for="guess2">OR . . . Check your answer here:</label>
+	<input name="guess2" id="guess2" type="text" placeholder="(type in answer)">
+	<span id="result2"></span>
+<h2>Get them both right? Contact BodyBuzz and let them know!</h2>
+<script type="text/javascript" src="scrambleGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BodyBuzz Trivia Quiz</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Karen High"></meta>
+	<meta name="description" content="Capstone Project">
+	<link rel="stylesheet" type="text/css" href="triviaQuiz.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+<header>
+	<img id="logo" src="bBuzzLogo.jpg">
+	<h1>Eating and Exercise Trivia Quiz</h1>
+</header>
+
+<div id="stripe">
+	<button id="home" class="stripeButton" onclick="window.location.href='https://www.bodybuzzwellness.com'">HOME</button>	
+	<button id="trivia" class="stripeButton" onclick="window.location.href='triviaQuiz.html'">TRIVIA QUIZ</button>
+	<button id="scramble" class="stripeButton" onclick="window.location.href='scrambleGame.html'">WORD SCRAMBLE</button>
+	<button id="burn" class="stripeButton" onclick="window.location.href='fitnessGame.html'">CALORIE BURN</button>
+	<button class="stripeButton" onclick="window.location.href='mailto:info@bodybuzzwellness.com'">CONTACT BodyBuzz</button>
+	</div>
+<h2>Ready to test yourself with some eating and exercise trivia?</h2>
+<h2 id="score">Score: <span id="correct">0</span> correct out of 6 questions</h2>
+<div id="q1" class="question">
+	<h3>1. What is the best way to figure out if you weigh too much or too little for your body size?</h3>
+	<ul>
+		<li>
+			<input id="q1choice1" type="radio" name="question1" value="wrong" autocomplete="off">
+			<label for="q1choice1">Ask a stranger.</label>
+		</li>
+		<li>
+			<input id="q1ch2" type="radio" name="question1" value="wrong" autocomplete="off">
+			<label for="q1ch2">Ask the best looking people you know what they think.</label>
+		</li>
+		<li>
+			<input id="q1ch3" type="radio" name="question1" value="wrong" autocomplete="off">
+			<label for="q1ch3">Look through magazines and see how you compare to movie stars and models.</label>
+		</li>
+		<li>
+			<input id="q1ch4" type="radio" name="question1" value="right" autocomplete="off">
+			<label for="q1ch4">Ask a doctor.</label>
+		</li>
+	</ul>
+</div>
+<div  id="q2" class="question">
+	<h3>2. Which of the following is NOT a benefit of exercise?</h3>
+	<ul>
+		<li>
+			<input id="q2choice1" type="radio" name="question2" value="wrong">
+			<label for="q2choice1">Exercising relieves stress.</label>
+		</li>
+		<li>
+			<input id="q2ch2" type="radio" name="question2" value="wrong">
+			<label for="q2ch2">Exercising increases self esteem.</label>
+		</li>
+		<li>
+			<input id="q2ch3" type="radio" name="question2" value="right">
+			<label for="q2ch3">Exercising increases your income.</label>
+		</li>
+		<li>
+			<input id="q2ch4" type="radio" name="question2" value="wrong">
+			<label for="q2ch4">Exercising strengthens your heart.</label>
+		</li>
+	</ul>
+</div>
+<div  id="q3" class="question">
+	<h3>3. Which of these foods is the best source of omega 3 fatty acids?</h3>
+	<ul>
+		<li>
+			<input id="q3choice1" type="radio" name="question3" value="wrong">
+			<label for="q2choice1">Potatoes</label>
+		</li>
+		<li>
+			<input id="q3ch2" type="radio" name="question3" value="right">
+			<label for="q3ch2">Salmon</label>
+		</li>
+		<li>
+			<input id="q3ch3" type="radio" name="question3" value="wrong">
+			<label for="q3ch3">Celery</label>
+		</li>
+		<li>
+			<input id="q3ch4" type="radio" name="question3" value="wrong">
+			<label for="q3ch4">Raspberries</label>
+		</li>
+	</ul>
+</div>
+<div  id="q4" class="question">
+	<h3>4. Calcium is a mineral which is important for maintaining strong bones and teeth.  Which of the following foods is the best source of calcium?</h3>
+	<ul>
+		<li>
+			<input id="q4choice1" type="radio" name="question4" value="right">
+			<label for="q4choice1">Yogurt</label>
+		</li>
+		<li>
+			<input id="q4ch2" type="radio" name="question4" value="wrong">
+			<label for="q4ch2">Bread</label>
+		</li>
+		<li>
+			<input id="q4ch3" type="radio" name="question4" value="wrong">
+			<label for="q4ch3">Chicken</label>
+		</li>
+		<li>
+			<input id="q4ch4" type="radio" name="question4" value="wrong">
+			<label for="q4ch4">Banana</label>
+		</li>
+	</ul>
+</div>
+<div  id="q5" class="question">
+	<h3>5. Many people think they eat healthy but in truth their portions sizes are way too big.  Which of these objects is comparable in size to one portion/serving of meat?</h3>
+	<ul>
+		<li>
+			<input id="q5ch1" type="radio" name="question5" value="right">
+			<label for="q5ch1">a deck of cards</label>
+		</li>
+		<li>
+			<input id="q5ch2" type="radio" name="question5" value="wrong">
+			<label for="q5ch2">a woman's size 8 foot</label>
+		</li>
+		<li>
+			<input id="q5ch3" type="radio" name="question5" value="wrong">
+			<label for="q5ch3">a golf ball</label>
+		</li>
+		<li>
+			<input id="q5ch4" type="radio" name="question5" value="wrong">
+			<label for="q5ch4">a paperback novel</label>
+		</li>
+	</ul>
+</div>
+<div id="q6" class="question">
+	<h3>6. Sugar is a simple carbohydrate.  Most manufacturers add sugar to processed foods, disguising it on the ingredients label with different names.  Which of these is another word for sugar?</h3>
+	<ul>
+		<li>
+			<input id="q6choice1" type="radio" name="question6" value="wrong">
+			<label for="q2choice1">ingredients with the word 'sweetener'</label>
+		</li>
+		<li>
+			<input id="q6ch2" type="radio" name="question6" value="wrong">
+			<label for="q2ch2">ingredients with the word 'syrup'</label>
+		</li>
+		<li>
+			<input id="q6ch3" type="radio" name="question6" value="wrong">
+			<label for="q2ch3">ingredients ending in 'ose'</label>
+		</li>
+		<li>
+			<input id="q6ch4" type="radio" name="question6" value="right">
+			<label for="q2ch4">all of these</label>
+		</li>
+	</ul>
+</div>
+<div id="done" class="question">
+	<h2>CONGRATULATIONS, you read all the questions!</h2>
+	<h2>(contact BodyBuzz if you got a perfect score)</h2>
+	<div id="imgContainer">
+		<div class="balloon"><img id="balloon" src="balloon.png"></div>	
+	</div>
+</div>
+
+<h2 id="tryAgain"></h2>
+<h2 id="feedback"></h2>
+<button id="checkButton">Click to Check Answer</button>
+<button id="next">Next Question</button>
+
+<script type="text/javascript" src="triviaQuiz.js"></script>
+</body>
+</html>

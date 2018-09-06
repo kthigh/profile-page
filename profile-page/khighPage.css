@@ -1,0 +1,118 @@
+body {
+	background-image: url("images/Abstract_squares_background.jpg");
+	background-size: 100%;
+	color: #2A0934;
+	font-family: sans-serif;
+	margin:0;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin: 30px 0 0 30px;
+}
+
+header {
+	font-family: "Merienda";
+	text-align: center;
+	color: #3B3176;
+}
+
+#stripe {
+	background-color: #857DB1;
+	height: 40px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	background-color: #857DB1;
+	margin: 0;
+	padding: 1px 20px 10px 20px;
+	font-weight: 700;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	transition: all 0.3s;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	outline: none;
+}
+
+a:hover {
+	color: #857DB1;
+	background-color: white;
+}
+
+#active {
+	background-color: #3B3176;
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 18px;
+	width: 65%;
+	margin: 20px 60px;
+	line-height: 1.5;
+	padding: 5px;
+}
+
+#pTwo {
+	width: 50%;
+}
+
+#BVCSLogo, #gnsLogo {
+	float: right;
+	margin-right: 80px;
+	border: 1px solid #3B3176;
+	border-radius: 5%;
+	box-shadow: 5px 2px 2px #2A0934;
+}
+ 
+#church {
+	float: left;
+	height: 180px;
+	width: 180px;
+	margin: 40px 20px 100px 20px;
+	border: 1px solid #3B3176;
+	border-radius: 5%;
+	box-shadow: 5px 2px 2px #2A0934;
+}
+
+#CFLBFLogo {
+	float: left;
+	margin: 40px 15px;
+	border: 1px solid #3B3176;
+	border-radius: 5%;
+	box-shadow: 5px 2px 2px #2A0934;
+}
+
+#details {
+	width: 80%;
+	padding: 0 100px;
+}
+
+#educ {
+	text-align: left;
+
+}
+
+#certs {
+	margin: 0 100px;
+}
+
+#certs img {
+	width: 100px;
+	height: 100px;
+	margin: 0 20px;
+	border: 1px solid #3B3176;
+	border-radius: 5%;
+}

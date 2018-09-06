@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Karen High"></meta>
+	<meta name="description" content="Capstone Project">
+	<title>BodyBuzz Fitness Game</title>
+	<link rel="stylesheet" type="text/css" href="fitnessGame.css">
+</head>
+<body>
+<header>
+	<img id="logo" src="bBuzzLogo.jpg">
+	<h1>Burn Those Calories!</h1>
+	<div class="bee"><img id="beeImage" src="happyBee.jpg"></div>
+</header>
+
+<div id="stripe">
+	<button id="home" class="stripeButton" onclick="window.location.href='https://www.bodybuzzwellness.com'">HOME</button>	
+	<button id="trivia" class="stripeButton" onclick="window.location.href='triviaQuiz.html'">TRIVIA QUIZ</button>
+	<button id="scramble" class="stripeButton" onclick="window.location.href='scrambleGame.html'">WORD SCRAMBLE</button>
+	<button id="burn" class="stripeButton" onclick="window.location.href='fitnessGame.html'">CALORIE BURN</button>
+	<button class="stripeButton" onclick="window.location.href='mailto:info@bodybuzzwellness.com'">CONTACT BodyBuzz</button>
+</div>
+
+<h2 id="intro">These BodyBuzz activities can burn anywhere from 100 to 350 calories per half hour.<button id="reset">START OVER</button></h2>
+<h2 id="select">Click on the Activity that burns <span id="calories"></span> Calories over <span id="time">30 minutes</span>:
+<span id="answer"></span></h2>
+
+<div id="container">
+	<a href= '#' id='350'></a>
+	<a href= '#' id='250'></a>
+	<a href= '#' id='100'></a>
+	<a href= '#' id='300'></a>
+	<a href= '#' id='200'></a>
+	<a href= '#' id='150'></a>
+</div>
+
+<h2 id="prompt">Figure them all out? Email BodyBuzz with activities names and calories!</h2>
+
+<script type="text/javascript" src="fitnessGame.js"></script>
+
+</body>
+</html>
+
+
+
+

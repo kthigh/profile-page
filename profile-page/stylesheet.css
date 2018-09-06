@@ -1,0 +1,142 @@
+/*Correction of positioning attempted on 6-3. Finally saw the Lynda video which 
+explained relative and absolute positioning so well - how did I miss it before?! */
+
+body {
+	background-color: skyblue;
+}
+#container {border: 1px solid blueviolet; 
+			background-image: url("images/clouds.jpg");
+			position: relative; top: 10px;
+			margin: 12px; width: 1205px; height: 1710px;
+}	
+		
+
+header {border: 3px solid darkblue;
+		border-radius: 5px;
+		position: absolute;
+		top: 10px;
+		margin: 10px;
+		padding: 5px;
+		width: 1175px; height: 450px;
+}
+
+h1 {color:green; font-family:fantasy;
+	font-size:2em;
+	text-align: center;
+}
+
+header p {color: black; text-align: center; font-size: 1em; 
+			font-family: Tahoma, sans-serif;
+}
+
+#camp_link {text-align: center;
+			position: fixed;
+			margin: 10px 0px 5px 900px;
+			width: 240px; height:44px;
+			padding: 2px;
+			border: 3px solid darkblue;
+			border-radius: 5px;
+			background-color: thistle;
+}
+
+header img {margin: 0px 0px 0px 20px; 
+		border: 3px solid darkblue;
+		border-radius: 5px;
+		width: 350px; height: 300px;
+}
+
+h2 {color:darkgreen; font-family:verdana, sans-serif; text-align: left; 
+	font-size: 1.75em; 
+}
+
+h3 {color:blueviolet; font-family:Ariel, sans-serif; text-align: center;
+	font-size: 1.5em;
+}
+	
+h4	{color: black; font-family:Courier, monospace; 
+	font-size: 1.25em; 
+	text-align: center;
+}
+
+nav {
+	position: absolute; 
+	top: 490px; left: 0px;
+	width: 300px; height: 150px;
+	border: 1px solid darkblue;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+}
+
+nav ul {font-family: Ariel, sans-serif;
+		font-size: 1.25em
+}
+		
+a {text-decoration: none;
+}
+
+a:link {color: blueviolet;}
+a:visited {color: darkblue;}
+a:hover {color: thistle;}
+a:active {color: black;}
+
+nav .activePage {font-size: 1.5em; font-style: italic;
+}
+
+#music_clipart {width: 600px; height: 300px;
+}
+
+section {
+	position: absolute;
+	top: 490px; left: 340px;
+	width: 825px; height: 1190px;
+	margin: 10px; 
+	border: 2px solid darkblue;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+section .right_img {float: right; height: 300px; width: 350px; border: 2px solid darkblue;
+			border-radius: 5px; margin-left: 3px;
+			margin-bottom: 3px;
+}
+
+section .clear {clear: both;
+}
+
+section p {color:black; font-size: 1.2em; 
+			font-family: Ariel, sans-serif; text-decoration: none;
+}
+
+
+aside {
+	position: absolute;
+	top: 680px; left: 0px;
+	height: 1000px; width: 300px;
+	margin: 10px;
+	background-color: thistle;
+	padding: 10px;
+}
+
+aside p {color: blueviolet; font-size: 1.1em; font-family: serif;
+}
+
+aside ul, ol {color: darkblue; font-size: 1em; font-family: serif;
+}
+footer {position: relative;
+		left: 400px;
+}
+
+footer {color:blueviolet; font-size: 1.25em; 
+		font-family: Verdana, sans-serif; text-decoration: none;
+}
+#name {color:black; font-style: italic;
+}
+
+table, th, td {border: 1px solid darkblue;
+}
+th {
+	font-weight: bold; color: darkblue;
+}
+td {color:black; 
+}
